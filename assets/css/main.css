@@ -1,0 +1,622 @@
+/**
+* Template Name: Mentor - Arsitek Surabaya Custom
+* Theme: Warm Espresso & Terracotta Gold (Architectural Earthy Tone)
+*/
+
+/*--------------------------------------------------------------
+# 1. Font & Color Variables
+--------------------------------------------------------------*/
+:root {
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Global Colors - Palette Cokelat Premium */
+:root { 
+  --background-color: #FDFBF7; /* Cream Warm Background */
+  --default-color: #4A3B32;    /* Warm Charcoal / Dark Wood Text */
+  --heading-color: #3E2723;    /* Espresso Dark Brown Header */
+  --accent-color: #C67D0A;     /* Terracotta Gold / Amber Accent */
+  --surface-color: #FFFFFF;    /* Clean White Card Surface */
+  --contrast-color: #FFFFFF;   /* White Contrast Text */
+}
+
+/* Nav Menu Colors */
+:root {
+  --nav-color: #3E2723;         /* Dark Espresso Nav Text */
+  --nav-hover-color: #C67D0A;   /* Amber Gold Hover */
+  --nav-mobile-background-color: #FDFBF7;
+  --nav-dropdown-background-color: #FFFFFF;
+  --nav-dropdown-color: #3E2723;
+  --nav-dropdown-hover-color: #C67D0A;
+}
+
+/* Color Presets */
+.light-background {
+  --background-color: #F4EBE1;  /* Soft Warm Beige Background */
+  --surface-color: #FFFFFF;
+}
+
+.dark-background {
+  --background-color: #2C1D18;  /* Deep Espresso Dark Background */
+  --default-color: #EFE6DD;
+  --heading-color: #FFFFFF;
+  --surface-color: #3A2A23;
+  --contrast-color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# 2. General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# 3. Global Header & Desktop Navigation Menu
+--------------------------------------------------------------*/
+.header {
+  color: var(--default-color);
+  background-color: var(--surface-color);
+  padding: 12px 0;
+  transition: all 0.5s;
+  z-index: 997;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.header .container-fluid,
+.header .container-xl {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.header .logo {
+  margin-right: 0 !important;
+}
+
+.header .logo h1 {
+  font-weight: 800 !important;
+  font-size: 20px !important;
+  margin: 0;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--heading-color);
+}
+
+.header .logo img {
+  max-height: 32px !important;
+  margin-right: 8px !important;
+}
+
+.header .btn-getstarted,
+.header .btn-getstarted:focus {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 25px;
+  margin-left: 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.header .btn-getstarted:hover {
+  background: color-mix(in srgb, var(--accent-color), black 15%);
+}
+
+@media (min-width: 1200px) {
+  .navmenu {
+    padding: 0;
+    margin-left: auto !important; /* Mendorong menu ke sebelah kanan mendekati CTA */
+  }
+  .navmenu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4px;
+  }
+  .navmenu li {
+    position: relative;
+  }
+  .navmenu a, .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 12px 10px !important;
+    font-size: 16px !important;
+    font-family: var(--nav-font);
+    font-weight: 500 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+  }
+}
+
+/*--------------------------------------------------------------
+# 4. Mobile Navigation & Responsive Header (< 1200px)
+--------------------------------------------------------------*/
+.mobile-nav-toggle {
+  color: var(--heading-color) !important;
+  font-size: 28px !important;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  line-height: 0;
+  border: none;
+  background: transparent;
+}
+
+.mobile-nav-toggle:hover {
+  color: var(--accent-color) !important;
+}
+
+@media (max-width: 1199px) {
+  .header .container-fluid,
+  .header .container-xl {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .header .logo img {
+    max-height: 28px !important;
+    margin-right: 6px !important;
+  }
+
+  .header .logo h1 {
+    font-size: 16px !important;
+    letter-spacing: 0px;
+  }
+
+  /* Sembunyikan Tombol Konsultasi Desain di HP agar Header Rapi */
+  .header .btn-getstarted {
+    display: none !important;
+  }
+
+  .mobile-nav-toggle {
+    margin-left: auto;
+  }
+
+  .navmenu ul {
+    display: none;
+  }
+
+  /* Overlay Modal Menu saat Hamburger Aktif */
+  .mobile-nav-active body {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    inset: 0;
+    background: rgba(44, 29, 24, 0.6);
+    transition: 0.3s;
+    z-index: 9999;
+  }
+
+  /* Ringkaskan Ukuran Kotak Menu Mobile agar Tidak Terlalu Panjang */
+  .mobile-nav-active .navmenu > ul {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    right: 20px;
+    bottom: auto !important;
+    height: auto !important;
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    padding: 10px 0;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .mobile-nav-active .navmenu a, 
+  .mobile-nav-active .navmenu a:focus {
+    color: var(--heading-color);
+    padding: 12px 20px !important;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  }
+
+  .mobile-nav-active .navmenu a:hover, 
+  .mobile-nav-active .navmenu .active {
+    color: var(--accent-color) !important;
+    background-color: var(--background-color);
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    position: fixed;
+    top: 18px;
+    right: 25px;
+    z-index: 10000;
+    color: var(--accent-color) !important;
+  }
+
+  /* Perbaikan Hero Section di HP */
+  .hero {
+    min-height: 60vh !important;
+    padding: 60px 15px !important;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem !important;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 14px !important;
+    margin-top: 12px !important;
+  }
+
+  .hero .btn-get-started {
+    padding: 8px 25px !important;
+    font-size: 13.5px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero h2 {
+    font-size: 1.6rem !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# 5. Section Title
+--------------------------------------------------------------*/
+.section-title {
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.section-title p {
+  color: var(--heading-color);
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--nav-font);
+}
+
+/*--------------------------------------------------------------
+# 6. Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 75vh !important;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-color);
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero:before {
+  content: "";
+  background: rgba(44, 29, 24, 0.7);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.hero p {
+  color: #EFE6DD;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+.hero .btn-get-started {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: 0.4s;
+  margin-top: 25px;
+  background: var(--accent-color);
+  color: #FFFFFF;
+}
+
+.hero .btn-get-started:hover {
+  background: #a36506;
+}
+
+/*--------------------------------------------------------------
+# 7. Counts Section
+--------------------------------------------------------------*/
+.counts {
+  padding: 40px 0;
+}
+
+.counts .stats-item span {
+  font-size: 42px;
+  display: block;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.counts .stats-item p {
+  color: var(--default-color);
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# 8. Portfolio Grid Section
+--------------------------------------------------------------*/
+.portfolio-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.portfolio-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-img-wrapper img {
+  transform: scale(1.06);
+}
+
+.portfolio-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(62, 39, 35, 0.9);
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/*--------------------------------------------------------------
+# 9. Scroll Top & Floating WhatsApp Buttons
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 25px;
+  bottom: 85px;
+  z-index: 998;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: #a36506;
+  color: #ffffff;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# 10. Multi-Column Footer
+--------------------------------------------------------------*/
+.footer-multi {
+  background-color: #2C1D18;
+  color: #EFE6DD;
+  font-size: 14px;
+}
+
+.footer-multi h3.footer-brand {
+  font-size: 24px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+
+.footer-multi h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-multi h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+.footer-multi ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-multi ul li {
+  padding: 6px 0;
+}
+
+.footer-multi ul li a {
+  color: #EFE6DD;
+  transition: all 0.3s ease;
+}
+
+.footer-multi ul li a:hover {
+  color: var(--accent-color);
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  background-color: #201410;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ==================== HERO MOBILE IMAGE & TEXT FIX ==================== */
+.hero img {
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: 50vh !important;
+    padding: 70px 15px !important;
+  }
+
+  .hero h2 {
+    font-size: 1.75rem !important;
+    line-height: 1.35 !important;
+    font-weight: 700 !important;
+  }
+
+  .hero p {
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+    margin-top: 10px !important;
+    padding: 0 10px;
+  }
+
+  .hero .btn-get-started {
+    margin-top: 20px !important;
+    padding: 9px 28px !important;
+    font-size: 13.5px !important;
+  }
+}
+
+/* ==================== NAVMENU STATE FIX (ACTIVE & HOVER) ==================== */
+/* 1. Warna teks default untuk SEMUA menu navigasi agar tidak berubah otomatis */
+.navmenu a {
+  color: var(--nav-color) !important;
+  transition: 0.3s ease;
+}
+
+/* 2. Hanya menu yang sedang aktif (halaman yang dikunjungi) yang berwarna oranye */
+.navmenu .active, 
+.navmenu .active:focus {
+  color: var(--accent-color) !important;
+  font-weight: 600 !important;
+}
+
+/* 3. Menu lain saat di-hover (disorot kursor) berubah menjadi warna oranye lembut */
+.navmenu a:hover:not(.active) {
+  color: var(--accent-color) !important;
+}
+
+/* ==================== BREADCRUMB CUSTOM SEPARATOR ==================== */
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--accent-color) !important;
+  content: "/" !important;
+}
