@@ -1,0 +1,21 @@
+{
+  "name": "Arsitek Surabaya Studio - Konsultan Perancangan & Konstruksi",
+  "short_name": "ArsitekSurabaya",
+  "icons": [
+    {
+      "src": "assets/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2C1D18",
+  "background_color": "#ffffff",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}

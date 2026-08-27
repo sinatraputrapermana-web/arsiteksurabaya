@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Deklarasi Lokasi Sitemap Resmi
+Sitemap: https://arsiteksurabaya.web.id/sitemap.xml
