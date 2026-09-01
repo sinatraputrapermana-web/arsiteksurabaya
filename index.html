@@ -90,7 +90,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
+      <a href="index.html" class="logo d-flex align-items-center text-decoration-none me-auto me-xl-0">
         <img src="assets/img/logo.png" alt="Logo Arsitek Surabaya" class="me-2">
         <h1 class="sitename m-0">ArsitekSurabaya</h1>
       </a>
@@ -103,11 +103,14 @@
           <li><a href="services.html">Layanan</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Kontak</a></li>
+          <li class="d-xl-none mt-3">
+            <a class="btn-getstarted text-center text-white text-decoration-none w-100 py-2" href="contact.html">Konsultasi Desain</a>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted text-decoration-none" href="contact.html">Konsultasi Desain</a>
+      <a class="btn-getstarted d-none d-xl-inline-block text-decoration-none" href="contact.html">Konsultasi Desain</a>
 
     </div>
   </header>
@@ -196,7 +199,6 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
 
-          <!-- Projek 1: Residensial -->
           <div class="col-lg-4 col-md-6">
             <article class="portfolio-card shadow-sm border rounded-4 overflow-hidden bg-white h-100">
               <div class="portfolio-img-wrapper">
@@ -211,7 +213,6 @@
             </article>
           </div>
 
-          <!-- Projek 2: Komersial -->
           <div class="col-lg-4 col-md-6">
             <article class="portfolio-card shadow-sm border rounded-4 overflow-hidden bg-white h-100">
               <div class="portfolio-img-wrapper">
@@ -226,7 +227,6 @@
             </article>
           </div>
 
-          <!-- Projek 3: Interior -->
           <div class="col-lg-4 col-md-6">
             <article class="portfolio-card shadow-sm border rounded-4 overflow-hidden bg-white h-100">
               <div class="portfolio-img-wrapper">
@@ -243,7 +243,6 @@
 
         </div>
 
-        <!-- TOMBOL LIHAT SEMUA PORTOFOLIO -->
         <div class="text-center mt-5" data-aos="fade-up">
           <a href="portfolio.html" class="btn btn-outline-warning btn-lg rounded-pill px-4 py-2 fw-bold text-dark text-decoration-none shadow-sm">
             Lihat Semua Portofolio <i class="bi bi-arrow-right ms-2"></i>
@@ -252,7 +251,7 @@
       </div>
     </section>
 
-    <!-- 5. Section Blog & Edukasi Terbaru (Tarik 3 Artikel) -->
+    <!-- 5. Section Blog & Edukasi Terbaru -->
     <section id="latest-blog" class="section py-5">
       <div class="container section-title text-center" data-aos="fade-up">
         <h2>Artikel & Edukasi Terbaru</h2>
@@ -262,7 +261,6 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
 
-          <!-- Artikel 1: Panduan Memilih Arsitek -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
@@ -288,7 +286,6 @@
             </article>
           </div>
 
-          <!-- Artikel 2: Panduan Rumah Tropis -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
@@ -314,7 +311,6 @@
             </article>
           </div>
 
-          <!-- Artikel 3: Estimasi Biaya & RAB -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
@@ -350,7 +346,7 @@
       </div>
     </section>
 
-    <!-- 6. Section Alur Kerja (Work Process) -->
+    <!-- 6. Section Alur Kerja -->
     <section id="process" class="section py-5 light-background">
       <div class="container section-title text-center" data-aos="fade-up">
         <h2>Cara Kerja Kami</h2>
@@ -497,7 +493,6 @@
     <div class="container pb-4">
       <div class="row gy-4">
 
-        <!-- Kolom 1: Brand & Profil -->
         <div class="col-lg-5 col-md-6">
           <h3 class="footer-brand mb-3">arsiteksurabaya</h3>
           <p class="mb-2">Studio Perancangan Arsitektur, Desain Interior & Konsultan Konstruksi Profesional</p>
@@ -505,7 +500,6 @@
           <p class="fw-bold text-white mb-0">WhatsApp Studio: <span class="text-warning">+62 889-8964-3555</span></p>
         </div>
 
-        <!-- Kolom 2: Layanan Populer -->
         <div class="col-lg-4 col-md-6">
           <h4>Layanan Populer</h4>
           <ul>
@@ -517,7 +511,6 @@
           </ul>
         </div>
 
-        <!-- Kolom 3: Navigasi Website -->
         <div class="col-lg-3 col-md-6">
           <h4>Navigasi & Ekosistem</h4>
           <ul>
@@ -533,7 +526,6 @@
       </div>
     </div>
 
-    <!-- Sub-Footer Copyright -->
     <div class="footer-bottom py-3 text-center">
       <div class="container">
         <p class="mb-0">© Copyright <strong>arsiteksurabaya.web.id</strong>. All Rights Reserved</p>
@@ -541,10 +533,8 @@
     </div>
   </footer>
 
-  <!-- Scroll Top Arrow Button -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/6288989643555?text=Halo%20Arsitek%20Surabaya,%20saya%20ingin%20konsultasi%20desain%20bangunan" class="whatsapp-float" target="_blank" title="Konsultasi via WhatsApp">
     <i class="bi bi-whatsapp"></i>
   </a>
@@ -559,27 +549,41 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- Script Aktifkan Mobile Hamburger Menu -->
+  <!-- Script Interaktif Mobile Hamburger Menu -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
       function mobileNavToggle() {
         document.querySelector('body').classList.toggle('mobile-nav-active');
-        mobileNavToggleBtn.classList.toggle('bi-list');
-        mobileNavToggleBtn.classList.toggle('bi-x');
+        if (mobileNavToggleBtn) {
+          mobileNavToggleBtn.classList.toggle('bi-list');
+          mobileNavToggleBtn.classList.toggle('bi-x');
+        }
       }
 
       if (mobileNavToggleBtn) {
-        mobileNavToggleBtn.addEventListener('click', mobileNavToggle);
+        mobileNavToggleBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          mobileNavToggle();
+        });
       }
 
       document.querySelectorAll('#navmenu a').forEach(navmenu => {
         navmenu.addEventListener('click', () => {
-          if (document.querySelector('.mobile-nav-active')) {
+          if (document.body.classList.contains('mobile-nav-active')) {
             mobileNavToggle();
           }
         });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (document.body.classList.contains('mobile-nav-active')) {
+          const navmenu = document.querySelector('#navmenu');
+          if (navmenu && !navmenu.contains(e.target)) {
+            mobileNavToggle();
+          }
+        }
       });
     });
   </script>

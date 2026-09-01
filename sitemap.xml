@@ -3,26 +3,26 @@
   <!-- Halaman Utama (Homepage) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/index.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://arsiteksurabaya.web.id/index</loc>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
 
   <!-- Halaman Profil & Portofolio -->
   <url>
-    <loc>https://arsiteksurabaya.web.id/about.html</loc>
+    <loc>https://arsiteksurabaya.web.id/about</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/portfolio.html</loc>
+    <loc>https://arsiteksurabaya.web.id/portfolio</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -30,13 +30,13 @@
 
   <!-- Halaman Layanan & Detail Layanan -->
   <url>
-    <loc>https://arsiteksurabaya.web.id/services.html</loc>
+    <loc>https://arsiteksurabaya.web.id/services</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/service-detail.html</loc>
+    <loc>https://arsiteksurabaya.web.id/service-detail</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -44,75 +44,95 @@
 
   <!-- Halaman Indeks Blog -->
   <url>
-    <loc>https://arsiteksurabaya.web.id/blog.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://arsiteksurabaya.web.id/blog</loc>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 Artikel Baru (31 Agustus 2026) -->
+  <!-- 3 Artikel Baru (1 September 2026) -->
   <url>
-    <loc>https://arsiteksurabaya.web.id/standar-kebutuhan-ruang-rumah-ideal.html</loc>
+    <loc>https://arsiteksurabaya.web.id/dampak-arah-orientasi-bangunan-efisiensi-energi</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsiteksurabaya.web.id/mengenal-konsep-open-plan-layout-rumah-modern</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsiteksurabaya.web.id/tahapan-proses-pembangunan-rumah-dari-nol</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 3 Artikel Batch Sebelumnya (31 Agustus 2026)[cite: 23, 24] -->
+  <url>
+    <loc>https://arsiteksurabaya.web.id/standar-kebutuhan-ruang-rumah-ideal</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/peran-arsitek-dalam-pengurusan-pbg-imb.html</loc>
+    <loc>https://arsiteksurabaya.web.id/peran-arsitek-dalam-pengurusan-pbg-imb</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/pentingnya-pengawasan-berkala-konstruksi.html</loc>
+    <loc>https://arsiteksurabaya.web.id/pentingnya-pengawasan-berkala-konstruksi</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- 3 Artikel Batch Kedua -->
+  <!-- 3 Artikel Batch Kedua[cite: 24] -->
   <url>
-    <loc>https://arsiteksurabaya.web.id/tips-memaksimalkan-lahan-sempit-surabaya.html</loc>
+    <loc>https://arsiteksurabaya.web.id/tips-memaksimalkan-lahan-sempit-surabaya</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/pentingnya-gambar-kerja-ded-bangunan.html</loc>
+    <loc>https://arsiteksurabaya.web.id/pentingnya-gambar-kerja-ded-bangunan</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/tren-desain-interior-ruang-usaha-kafe-surabaya.html</loc>
+    <loc>https://arsiteksurabaya.web.id/tren-desain-interior-ruang-usaha-kafe-surabaya</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- 3 Artikel Awal -->
+  <!-- 3 Artikel Awal[cite: 24] -->
   <url>
-    <loc>https://arsiteksurabaya.web.id/panduan-memilih-jasa-arsitek-surabaya.html</loc>
+    <loc>https://arsiteksurabaya.web.id/panduan-memilih-jasa-arsitek-surabaya</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/panduan-rumah-tropis-modern-surabaya.html</loc>
+    <loc>https://arsiteksurabaya.web.id/panduan-rumah-tropis-modern-surabaya</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://arsiteksurabaya.web.id/cara-menghitung-estimasi-biaya-rab-arsitek.html</loc>
+    <loc>https://arsiteksurabaya.web.id/cara-menghitung-estimasi-biaya-rab-arsitek</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Halaman Kontak -->
+  <!-- Halaman Kontak[cite: 24] -->
   <url>
-    <loc>https://arsiteksurabaya.web.id/contact.html</loc>
+    <loc>https://arsiteksurabaya.web.id/contact</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
