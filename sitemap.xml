@@ -3,13 +3,13 @@
   <!-- Halaman Utama (Homepage) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://arsiteksurabaya.web.id/index</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -45,12 +45,32 @@
   <!-- Halaman Indeks Blog -->
   <url>
     <loc>https://arsiteksurabaya.web.id/blog</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 Artikel Baru (2 September 2026) -->
+  <!-- 3 Artikel Baru (3 September 2026) -->
+  <url>
+    <loc>https://arsiteksurabaya.web.id/solusi-ventilasi-silang-rumah-sejuk-surabaya</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsiteksurabaya.web.id/kiat-memilih-kontraktor-konstruksi-rumah-surabaya</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsiteksurabaya.web.id/konsep-biophilic-design-rumah-sehat-surabaya</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 3 Artikel Batch 2 (2 September 2026) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/tips-memilih-material-bangunan-rumah-tropis</loc>
     <lastmod>2026-09-02</lastmod>
@@ -70,7 +90,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- 3 Artikel (1 September 2026) -->
+  <!-- 3 Artikel Batch 1 (1 September 2026) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/dampak-arah-orientasi-bangunan-efisiensi-energi</loc>
     <lastmod>2026-09-01</lastmod>
@@ -90,7 +110,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- 3 Artikel Batch Sebelumnya (31 Agustus 2026) -->
+  <!-- 3 Artikel Batch (31 Agustus 2026) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/standar-kebutuhan-ruang-rumah-ideal</loc>
     <lastmod>2026-08-31</lastmod>
