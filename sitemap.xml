@@ -3,13 +3,13 @@
   <!-- Halaman Utama (Homepage) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://arsiteksurabaya.web.id/index</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -45,12 +45,32 @@
   <!-- Halaman Indeks Blog -->
   <url>
     <loc>https://arsiteksurabaya.web.id/blog</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 Artikel Baru (3 September 2026) -->
+  <!-- 3 Artikel Baru Batch 4 (4 September 2026) -->
+  <url>
+    <loc>https://arsiteksurabaya.web.id/strategi-desain-rumah-bebas-banjir-surabaya</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsiteksurabaya.web.id/estetika-desain-interior-japandi-surabaya</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsiteksurabaya.web.id/desain-pencahayaan-fasad-landscape-rumah-surabaya</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 3 Artikel Batch 3 (3 September 2026) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/solusi-ventilasi-silang-rumah-sejuk-surabaya</loc>
     <lastmod>2026-09-03</lastmod>
