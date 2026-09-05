@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-  <!-- Technical SEO Markup -->
   <title>Jasa Arsitek Surabaya | Desain Rumah & Bangunan Profesional</title>
   <meta name="description" content="Jasa Arsitek Surabaya terpercaya dengan trafik 1.000+ pengunjung/bulan. Perancangan rumah minimalis, vila, interior kafe, dan bangunan komersial.">
   <meta name="keywords" content="Jasa Arsitek Surabaya, Arsitek Surabaya, Desain Rumah Surabaya, Arsitek Interior Surabaya">
@@ -26,39 +25,39 @@
   <meta name="geo.position" content="-7.257472;112.752088">
   <meta name="ICBM" content="-7.257472, 112.752088">
 
-  <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
 
-  <!-- Critical Preload LCP Image -->
+  <!-- Preload Gambar Hero Utama (LCP Fix) -->
   <link rel="preload" as="image" href="assets/img/hero.webp" type="image/webp" fetchpriority="high">
 
-  <!-- Optimized Google Fonts Async Loading -->
+  <!-- Preconnect External Domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 
-  <!-- Vendor CSS Files -->
+  <!-- High-Priority Critical Bootstrap CSS (Minimal) -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Inline Critical CSS for Fast Mobile Render -->
+  <!-- Async CSS Loading untuk Vendor Non-Kritis (Mencegah Render-Blocking) -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+  <!-- Critical Inline CSS (Rendering FCP & LCP Instan) -->
   <style>
     body{margin:0;padding:0;font-family:'Poppins',sans-serif;background-color:#fff;color:#212529}
     .header{background:#fff;box-shadow:0 2px 15px rgba(0,0,0,0.1);padding:15px 0}
-    .hero{position:relative;min-height:70vh;display:flex;align-items:center;justify-content:center;background-color:#2c1d18;overflow:hidden}
+    .hero{position:relative;min-height:75vh;display:flex;align-items:center;justify-content:center;background:#2c1d18;overflow:hidden}
     .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
     .hero .container{position:relative;z-index:2;color:#fff}
+    .hero h2{font-size:2rem;font-weight:700;margin-bottom:15px}
+    @media(min-width:768px){.hero h2{font-size:3rem}}
   </style>
 
-  <!-- Structured Data JSON-LD -->
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -84,21 +83,6 @@
     "areaServed": "Surabaya"
   }
   </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Berapa estimasi biaya jasa arsitek di Surabaya?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Biaya jasa arsitek di Surabaya berkisar antara 5% hingga 10% dari total Rencana Anggaran Biaya (RAB) bangunan."
-      }
-    }]
-  }
-  </script>
 </head>
 
 <body class="index-page">
@@ -109,7 +93,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center text-decoration-none me-auto me-xl-0">
         <img src="assets/img/logo.png" alt="Logo Arsitek Surabaya" class="me-2" width="40" height="40">
-        <h1 class="sitename m-0">ArsitekSurabaya</h1>
+        <h1 class="sitename m-0 fs-4 fw-bold">ArsitekSurabaya</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -136,12 +120,12 @@
 
     <!-- 1. Hero Section (LCP Optimization) -->
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero.webp" fetchpriority="high" alt="Studio Arsitek Surabaya - Fasad Modern Tropis" data-aos="fade-in">
+      <img src="assets/img/hero.webp" fetchpriority="high" alt="Studio Arsitek Surabaya - Fasad Modern Tropis" width="1200" height="800">
 
       <div class="container text-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">Desain Arsitektur Surabaya Modern & Resilien</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Solusi Perancangan Hunian dan Bangunan Komersial Berkelas di Surabaya</p>
-        <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="300">
+        <h2>Desain Arsitektur Surabaya Modern & Resilien</h2>
+        <p class="mb-4">Solusi Perancangan Hunian dan Bangunan Komersial Berkelas di Surabaya</p>
+        <div class="d-flex justify-content-center">
           <a href="portfolio.html" class="btn-get-started text-decoration-none">Jelajahi Karya Kami</a>
         </div>
       </div>
@@ -149,33 +133,33 @@
 
     <!-- 2. Social Proof Counter -->
     <section id="counts" class="section counts light-background py-4">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter">1000</span>
               <p>Pengunjung Bulanan</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter">85</span>
               <p>Projek Selesai</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter">12</span>
               <p>Penghargaan Desain</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter">15</span>
               <p>Arsitek Tim Profesional</p>
             </div>
           </div>
@@ -188,10 +172,10 @@
     <section id="about" class="section py-5">
       <div class="container">
         <div class="row gy-4 align-items-center">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 order-1 order-lg-2">
             <img src="assets/img/about-studio-team.webp" loading="lazy" class="img-fluid rounded shadow" alt="Tim Arsitek Surabaya Studio" width="600" height="400">
           </div>
-          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 order-2 order-lg-1 content">
             <h3 class="fw-bold mb-3" style="color: var(--heading-color);">Mewujudkan Bangunan Impian dengan Pendekatan Presisi</h3>
             <p class="fst-italic text-secondary">
               Kami adalah tim studio arsitektur berpengalaman di Surabaya yang mengombinasikan estetika tropis, kenyamanan fungsi ruang, dan efisiensi biaya.
@@ -208,12 +192,12 @@
 
     <!-- 4. Section Portofolio Terpilih -->
     <section id="portfolio" class="section py-5 light-background">
-      <div class="container section-title text-center" data-aos="fade-up">
+      <div class="container section-title text-center">
         <h2>Portofolio Terpilih</h2>
         <p>Karya Perancangan Arsitektur & Interior</p>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6">
@@ -260,7 +244,7 @@
 
         </div>
 
-        <div class="text-center mt-5" data-aos="fade-up">
+        <div class="text-center mt-5">
           <a href="portfolio.html" class="btn btn-outline-warning btn-lg rounded-pill px-4 py-2 fw-bold text-dark text-decoration-none shadow-sm">
             Lihat Semua Portofolio <i class="bi bi-arrow-right ms-2"></i>
           </a>
@@ -270,12 +254,12 @@
 
     <!-- 5. Section Blog & Edukasi Terbaru -->
     <section id="latest-blog" class="section py-5">
-      <div class="container section-title text-center" data-aos="fade-up">
+      <div class="container section-title text-center">
         <h2>Artikel & Edukasi Terbaru</h2>
         <p>Wawasan Perancangan & Perhitungan Pembangunan</p>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6">
@@ -355,7 +339,7 @@
 
         </div>
 
-        <div class="text-center mt-5" data-aos="fade-up">
+        <div class="text-center mt-5">
           <a href="blog.html" class="btn btn-dark btn-md rounded-pill px-4 py-2 fw-bold text-decoration-none">
             Lihat Semua Artikel Blog <i class="bi bi-arrow-right ms-2"></i>
           </a>
@@ -365,12 +349,12 @@
 
     <!-- 6. Section Alur Kerja -->
     <section id="process" class="section py-5 light-background">
-      <div class="container section-title text-center" data-aos="fade-up">
+      <div class="container section-title text-center">
         <h2>Cara Kerja Kami</h2>
         <p>4 Langkah Mudah Mewujudkan Bangunan Impian</p>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="row gy-4">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="p-4 bg-white shadow-sm rounded h-100 border">
@@ -409,12 +393,12 @@
 
     <!-- 7. Testimoni Klien -->
     <section id="testimonials" class="section py-5">
-      <div class="container section-title text-center" data-aos="fade-up">
+      <div class="container section-title text-center">
         <h2>Kepercayaan Klien</h2>
         <p>Apa Kata Mereka tentang Kami</p>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6">
@@ -456,13 +440,13 @@
 
     <!-- 8. Section FAQ -->
     <section id="faq" class="section py-5 light-background">
-      <div class="container section-title text-center" data-aos="fade-up">
+      <div class="container section-title text-center">
         <h2>Pertanyaan Umum</h2>
         <p>Frequently Asked Questions</p>
       </div>
 
       <div class="container">
-        <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
+        <div class="accordion" id="faqAccordion">
           
           <div class="accordion-item mb-3 border-0 shadow-sm">
             <h3 class="accordion-header">
@@ -496,7 +480,7 @@
 
     <!-- 9. Mid-Page CTA -->
     <section id="cta-services" class="py-5 text-white text-center" style="background-color: var(--heading-color);">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
         <h3 class="fw-bold mb-3">Siap Mewujudkan Bangunan Impian Anda?</h3>
         <p class="mb-4 text-light">Konsultasikan kebutuhan perancangan arsitektur, desain interior, hingga perhitungan RAB presisi bersama tim kami.</p>
         <a href="services.html" class="btn px-4 py-3 fw-bold text-white shadow-sm text-decoration-none" style="background-color: var(--accent-color); border-radius: 50px;">Lihat Layanan Lengkap Kami <i class="bi bi-arrow-right ms-2"></i></a>
@@ -556,20 +540,29 @@
     <i class="bi bi-whatsapp"></i>
   </a>
 
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files dengan Defer non-blocking -->
+  <!-- Deferred JavaScript Load (Non-Blocking Engine) -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/vendor/aos/aos.js" defer></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 
+  <!-- Lazy Loading Interactivity Script untuk Library Berat -->
   <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const loadScript = (src) => {
+          const s = document.createElement('script');
+          s.src = src;
+          s.async = true;
+          document.body.appendChild(s);
+        };
+        loadScript('assets/vendor/aos/aos.js');
+        loadScript('assets/vendor/glightbox/js/glightbox.min.js');
+        loadScript('assets/vendor/purecounter/purecounter_vanilla.js');
+        loadScript('assets/vendor/swiper/swiper-bundle.min.js');
+      }, 1500);
+    });
+
     document.addEventListener('DOMContentLoaded', () => {
       const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-
       function mobileNavToggle() {
         document.querySelector('body').classList.toggle('mobile-nav-active');
         if (mobileNavToggleBtn) {
@@ -591,15 +584,6 @@
             mobileNavToggle();
           }
         });
-      });
-
-      document.addEventListener('click', (e) => {
-        if (document.body.classList.contains('mobile-nav-active')) {
-          const navmenu = document.querySelector('#navmenu');
-          if (navmenu && !navmenu.contains(e.target)) {
-            mobileNavToggle();
-          }
-        }
       });
     });
   </script>
