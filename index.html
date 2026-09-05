@@ -26,13 +26,18 @@
   <meta name="geo.position" content="-7.257472;112.752088">
   <meta name="ICBM" content="-7.257472, 112.752088">
 
-  <!-- Favicons & Preloading -->
+  <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Critical Preload LCP Image -->
+  <link rel="preload" as="image" href="assets/img/hero.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Optimized Google Fonts Async Loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="assets/img/hero.webp" type="image/webp">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,6 +48,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Inline Critical CSS for Fast Mobile Render -->
+  <style>
+    body{margin:0;padding:0;font-family:'Poppins',sans-serif;background-color:#fff;color:#212529}
+    .header{background:#fff;box-shadow:0 2px 15px rgba(0,0,0,0.1);padding:15px 0}
+    .hero{position:relative;min-height:70vh;display:flex;align-items:center;justify-content:center;background-color:#2c1d18;overflow:hidden}
+    .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .hero .container{position:relative;z-index:2;color:#fff}
+  </style>
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -94,7 +108,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center text-decoration-none me-auto me-xl-0">
-        <img src="assets/img/logo.png" alt="Logo Arsitek Surabaya" class="me-2">
+        <img src="assets/img/logo.png" alt="Logo Arsitek Surabaya" class="me-2" width="40" height="40">
         <h1 class="sitename m-0">ArsitekSurabaya</h1>
       </a>
 
@@ -175,7 +189,7 @@
       <div class="container">
         <div class="row gy-4 align-items-center">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about-studio-team.webp" loading="lazy" class="img-fluid rounded shadow" alt="Tim Arsitek Surabaya Studio">
+            <img src="assets/img/about-studio-team.webp" loading="lazy" class="img-fluid rounded shadow" alt="Tim Arsitek Surabaya Studio" width="600" height="400">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
             <h3 class="fw-bold mb-3" style="color: var(--heading-color);">Mewujudkan Bangunan Impian dengan Pendekatan Presisi</h3>
@@ -206,7 +220,7 @@
             <article class="portfolio-card shadow-sm border rounded-4 overflow-hidden bg-white h-100">
               <div class="portfolio-img-wrapper">
                 <span class="portfolio-tag">Residensial</span>
-                <img src="assets/img/citraland-tropical-house.webp" loading="lazy" alt="Citraland Tropical House Surabaya" class="img-fluid w-100" style="height: 220px; object-fit: cover;">
+                <img src="assets/img/citraland-tropical-house.webp" loading="lazy" alt="Citraland Tropical House Surabaya" class="img-fluid w-100" style="height: 220px; object-fit: cover;" width="400" height="220">
               </div>
               <div class="p-4 bg-white">
                 <h4 class="fw-bold mb-1 fs-5" style="color: var(--heading-color);">Citraland Tropical House</h4>
@@ -220,7 +234,7 @@
             <article class="portfolio-card shadow-sm border rounded-4 overflow-hidden bg-white h-100">
               <div class="portfolio-img-wrapper">
                 <span class="portfolio-tag">Komersial</span>
-                <img src="assets/img/darmo-commercial-studio.webp" loading="lazy" alt="Darmo Commercial Studio Surabaya" class="img-fluid w-100" style="height: 220px; object-fit: cover;">
+                <img src="assets/img/darmo-commercial-studio.webp" loading="lazy" alt="Darmo Commercial Studio Surabaya" class="img-fluid w-100" style="height: 220px; object-fit: cover;" width="400" height="220">
               </div>
               <div class="p-4 bg-white">
                 <h4 class="fw-bold mb-1 fs-5" style="color: var(--heading-color);">Darmo Commercial Studio</h4>
@@ -234,7 +248,7 @@
             <article class="portfolio-card shadow-sm border rounded-4 overflow-hidden bg-white h-100">
               <div class="portfolio-img-wrapper">
                 <span class="portfolio-tag">Interior</span>
-                <img src="assets/img/graha-famili-interior.webp" loading="lazy" alt="Graha Famili Modern Interior Surabaya" class="img-fluid w-100" style="height: 220px; object-fit: cover;">
+                <img src="assets/img/graha-famili-interior.webp" loading="lazy" alt="Graha Famili Modern Interior Surabaya" class="img-fluid w-100" style="height: 220px; object-fit: cover;" width="400" height="220">
               </div>
               <div class="p-4 bg-white">
                 <h4 class="fw-bold mb-1 fs-5" style="color: var(--heading-color);">Graha Famili Interior</h4>
@@ -269,7 +283,7 @@
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Teknis & Lingkungan</span>
                 <a href="strategi-desain-rumah-bebas-banjir-surabaya.html">
-                  <img src="assets/img/blog-rumah-bebas-banjir-surabaya.webp" loading="lazy" alt="Strategi Desain Rumah Bebas Banjir & Genangan di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-rumah-bebas-banjir-surabaya.webp" loading="lazy" alt="Strategi Desain Rumah Bebas Banjir & Genangan di Surabaya" class="w-100 h-100 object-fit-cover" width="400" height="200">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -294,7 +308,7 @@
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Desain Interior</span>
                 <a href="estetika-desain-interior-japandi-surabaya.html">
-                  <img src="assets/img/blog-interior-japandi-surabaya.webp" loading="lazy" alt="Mengenal Tren Desain Interior Japandi untuk Rumah Modern di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-interior-japandi-surabaya.webp" loading="lazy" alt="Mengenal Tren Desain Interior Japandi untuk Rumah Modern di Surabaya" class="w-100 h-100 object-fit-cover" width="400" height="200">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -319,7 +333,7 @@
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Pencahayaan & Eksterior</span>
                 <a href="desain-pencahayaan-fasad-landscape-rumah-surabaya.html">
-                  <img src="assets/img/blog-pencahayaan-fasad-surabaya.webp" loading="lazy" alt="Panduan Desain Pencahayaan Fasad & Landscape Rumah di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-pencahayaan-fasad-surabaya.webp" loading="lazy" alt="Panduan Desain Pencahayaan Fasad & Landscape Rumah di Surabaya" class="w-100 h-100 object-fit-cover" width="400" height="200">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -544,7 +558,7 @@
 
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS Files dengan Defer non-blocking -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
   <script src="assets/vendor/aos/aos.js" defer></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
