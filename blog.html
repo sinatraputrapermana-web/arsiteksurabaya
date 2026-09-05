@@ -25,9 +25,12 @@
   <meta name="geo.position" content="-7.257472;112.752088">
   <meta name="ICBM" content="-7.257472, 112.752088">
 
-  <!-- Favicons & Fonts -->
+  <!-- Favicons & Preloading -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/img/blog-rumah-bebas-banjir-surabaya.webp" type="image/webp">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -63,7 +66,6 @@
         <h1 class="sitename m-0">ArsitekSurabaya</h1>
       </a>
 
-      <!-- Navigasi Menu: Blog Active -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Beranda</a></li>
@@ -88,7 +90,6 @@
       <div class="container" data-aos="fade-up">
         <h1 class="fw-bold text-white mb-2" style="font-size: 28px;">Edukasi & Jurnal Arsitektur</h1>
         
-        <!-- Navigasi Breadcrumb -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center mb-0" style="font-size: 14px;">
             <li class="breadcrumb-item"><a href="index.html" style="color: #EFE6DD; text-decoration: none;">Beranda</a></li>
@@ -109,13 +110,13 @@
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
 
-          <!-- ARTIKEL BARU BATCH 4 - 1: Rumah Bebas Banjir (4 September 2026) -->
+          <!-- ARTIKEL 1 (LCP): Rumah Bebas Banjir -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Teknis & Lingkungan</span>
                 <a href="strategi-desain-rumah-bebas-banjir-surabaya.html">
-                  <img src="assets/img/blog-rumah-bebas-banjir-surabaya.webp" alt="Strategi Desain Rumah Bebas Banjir & Genangan di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-rumah-bebas-banjir-surabaya.webp" fetchpriority="high" alt="Strategi Desain Rumah Bebas Banjir & Genangan di Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -135,13 +136,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BARU BATCH 4 - 2: Interior Japandi (4 September 2026) -->
+          <!-- ARTIKEL 2: Interior Japandi -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Desain Interior</span>
                 <a href="estetika-desain-interior-japandi-surabaya.html">
-                  <img src="assets/img/blog-interior-japandi-surabaya.webp" alt="Mengenal Tren Desain Interior Japandi untuk Rumah Modern di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-interior-japandi-surabaya.webp" loading="lazy" alt="Mengenal Tren Desain Interior Japandi untuk Rumah Modern di Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -161,13 +162,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BARU BATCH 4 - 3: Pencahayaan Fasad & Landscape (4 September 2026) -->
+          <!-- ARTIKEL 3: Pencahayaan Fasad & Landscape -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Pencahayaan & Eksterior</span>
                 <a href="desain-pencahayaan-fasad-landscape-rumah-surabaya.html">
-                  <img src="assets/img/blog-pencahayaan-fasad-surabaya.webp" alt="Panduan Desain Pencahayaan Fasad & Landscape Rumah di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-pencahayaan-fasad-surabaya.webp" loading="lazy" alt="Panduan Desain Pencahayaan Fasad & Landscape Rumah di Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -187,13 +188,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 3 - 1: Ventilasi Silang (3 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 3 - 1: Ventilasi Silang -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Arsitektur Tropis</span>
                 <a href="solusi-ventilasi-silang-rumah-sejuk-surabaya.html">
-                  <img src="assets/img/blog-ventilasi-silang-surabaya.webp" alt="Solusi Ventilasi Silang (Cross Ventilation) Rumah Sejuk di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-ventilasi-silang-surabaya.webp" loading="lazy" alt="Solusi Ventilasi Silang (Cross Ventilation) Rumah Sejuk di Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -213,13 +214,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 3 - 2: Memilih Kontraktor (3 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 3 - 2: Memilih Kontraktor -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Manajemen Konstruksi</span>
                 <a href="kiat-memilih-kontraktor-konstruksi-rumah-surabaya.html">
-                  <img src="assets/img/blog-pilih-kontraktor-surabaya.webp" alt="Kiat Memilih Kontraktor Konstruksi Rumah Terpercaya di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-pilih-kontraktor-surabaya.webp" loading="lazy" alt="Kiat Memilih Kontraktor Konstruksi Rumah Terpercaya di Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -239,13 +240,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 3 - 3: Biophilic Design (3 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 3 - 3: Biophilic Design -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Arsitektur & Kesehatan</span>
                 <a href="konsep-biophilic-design-rumah-sehat-surabaya.html">
-                  <img src="assets/img/blog-biophilic-design-surabaya.webp" alt="Konsep Biophilic Design: Menghadirkan Alam ke Dalam Rumah Sehat di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-biophilic-design-surabaya.webp" loading="lazy" alt="Konsep Biophilic Design: Menghadirkan Alam ke Dalam Rumah Sehat di Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -265,13 +266,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 2 - 1: Material Bangunan Tropis (2 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 2 - 1: Material Bangunan Tropis -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Material & Teknis</span>
                 <a href="tips-memilih-material-bangunan-rumah-tropis.html">
-                  <img src="assets/img/blog-material-tropis-surabaya.webp" alt="Tips Memilih Material Bangunan Tahan Cuaca Ekstrem Tropis" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-material-tropis-surabaya.webp" loading="lazy" alt="Tips Memilih Material Bangunan Tahan Cuaca Ekstrem Tropis" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -291,13 +292,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 2 - 2: Pencahayaan Alami (2 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 2 - 2: Pencahayaan Alami -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Pencahayaan & Ruang</span>
                 <a href="pentingnya-sistem-pencahayaan-alami-rumah.html">
-                  <img src="assets/img/blog-pencahayaan-alami-surabaya.webp" alt="Pentingnya Sistem Pencahayaan Alami untuk Kesehatan & Estetika Rumah" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-pencahayaan-alami-surabaya.webp" loading="lazy" alt="Pentingnya Sistem Pencahayaan Alami untuk Kesehatan & Estetika Rumah" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -317,13 +318,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 2 - 3: Desain Fasad Minimalis Modern (2 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 2 - 3: Desain Fasad Minimalis Modern -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Desain Eksterior</span>
                 <a href="trik-desain-fasad-rumah-minimalis-modern.html">
-                  <img src="assets/img/blog-fasad-mewah-surabaya.webp" alt="Trik Desain Fasad Rumah Minimalis Modern Biar Tampil Mewah" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-fasad-mewah-surabaya.webp" loading="lazy" alt="Trik Desain Fasad Rumah Minimalis Modern Biar Tampil Mewah" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -343,13 +344,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 1: Orientasi Bangunan (1 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 1: Orientasi Bangunan -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Arsitektur Pasif</span>
                 <a href="dampak-arah-orientasi-bangunan-efisiensi-energi.html">
-                  <img src="assets/img/blog-orientasi-bangunan-tropis.webp" alt="Dampak Arah Orientasi Bangunan Terhadap Efisiensi Energi Rumah Tropis" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-orientasi-bangunan-tropis.webp" loading="lazy" alt="Dampak Arah Orientasi Bangunan Terhadap Efisiensi Energi Rumah Tropis" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -369,13 +370,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 1: Open Plan Layout (1 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 1: Open Plan Layout -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Interior & Layout</span>
                 <a href="mengenal-konsep-open-plan-layout-rumah-modern.html">
-                  <img src="assets/img/blog-open-plan-interior-surabaya.webp" alt="Mengenal Konsep Open Plan Layout: Solusi Rumah Modern Lapang" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-open-plan-interior-surabaya.webp" loading="lazy" alt="Mengenal Konsep Open Plan Layout: Solusi Rumah Modern Lapang" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -395,13 +396,13 @@
             </article>
           </div>
 
-          <!-- ARTIKEL BATCH 1: Tahapan Pembangunan Rumah (1 September 2026)[cite: 12] -->
+          <!-- ARTIKEL BATCH 1: Tahapan Pembangunan Rumah -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Konstruksi & Manajemen</span>
                 <a href="tahapan-proses-pembangunan-rumah-dari-nol.html">
-                  <img src="assets/img/blog-tahapan-pembangunan-rumah.webp" alt="Panduan Tahapan Lengkap Membangun Rumah dari Nol Tanpa Stres" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-tahapan-pembangunan-rumah.webp" loading="lazy" alt="Panduan Tahapan Lengkap Membangun Rumah dari Nol Tanpa Stres" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -421,13 +422,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 1: Standar Kebutuhan Ruang (31 Agustus 2026)[cite: 12] -->
+          <!-- Artikel Lama 1: Standar Kebutuhan Ruang -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Perencanaan Ruang</span>
                 <a href="standar-kebutuhan-ruang-rumah-ideal.html">
-                  <img src="assets/img/blog-standar-ruang.webp" alt="Standar Kebutuhan Ruang untuk Merancang Rumah Ideal Keluarga" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-standar-ruang.webp" loading="lazy" alt="Standar Kebutuhan Ruang untuk Merancang Rumah Ideal Keluarga" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -447,13 +448,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 2: Peran Arsitek PBG/IMB (31 Agustus 2026)[cite: 12] -->
+          <!-- Artikel Lama 2: Peran Arsitek PBG/IMB -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Legalitas Bangunan</span>
                 <a href="peran-arsitek-dalam-pengurusan-pbg-imb.html">
-                  <img src="assets/img/blog-pbg-imb.webp" alt="Peran Krusial Arsitek dalam Pengurusan Perizinan PBG / IMB" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-pbg-imb.webp" loading="lazy" alt="Peran Krusial Arsitek dalam Pengurusan Perizinan PBG / IMB" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -473,13 +474,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 3: Pengawasan Berkala Konstruksi (31 Agustus 2026)[cite: 12] -->
+          <!-- Artikel Lama 3: Pengawasan Berkala Konstruksi -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Supervisi Konstruksi</span>
                 <a href="pentingnya-pengawasan-berkala-konstruksi.html">
-                  <img src="assets/img/blog-pengawasan.webp" alt="Pentingnya Pengawasan Berkala Konstruksi oleh Arsitek di Lapangan" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-pengawasan.webp" loading="lazy" alt="Pentingnya Pengawasan Berkala Konstruksi oleh Arsitek di Lapangan" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -499,13 +500,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 4: Tips Lahan Sempit[cite: 12] -->
+          <!-- Artikel Lama 4: Tips Lahan Sempit -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Tips Arsitektur</span>
                 <a href="tips-memaksimalkan-lahan-sempit-surabaya.html">
-                  <img src="assets/img/blog-lahan-sempit.webp" alt="Tips Cerdas Memaksimalkan Lahan Sempit di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-lahan-sempit.webp" loading="lazy" alt="Tips Cerdas Memaksimalkan Lahan Sempit di Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -525,13 +526,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 5: Gambar Kerja DED[cite: 12] -->
+          <!-- Artikel Lama 5: Gambar Kerja DED -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Teknis Bangunan</span>
                 <a href="pentingnya-gambar-kerja-ded-bangunan.html">
-                  <img src="assets/img/blog-ded-teknis.webp" alt="Pentingnya Gambar Kerja (DED) Sebelum Membangun" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-ded-teknis.webp" loading="lazy" alt="Pentingnya Gambar Kerja (DED) Sebelum Membangun" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -551,13 +552,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 6: Interior Kafe[cite: 12] -->
+          <!-- Artikel Lama 6: Interior Kafe -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Komersial & Interior</span>
                 <a href="tren-desain-interior-ruang-usaha-kafe-surabaya.html">
-                  <img src="assets/img/blog-cafe-interior.webp" alt="Tren Desain Interior Kafe & Ruang Usaha di Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-cafe-interior.webp" loading="lazy" alt="Tren Desain Interior Kafe & Ruang Usaha di Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -577,13 +578,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 7: Panduan Memilih Arsitek[cite: 12] -->
+          <!-- Artikel Lama 7: Panduan Memilih Arsitek -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Panduan Arsitektur</span>
                 <a href="panduan-memilih-jasa-arsitek-surabaya.html">
-                  <img src="assets/img/blog-panduan-arsitek-surabaya.webp" alt="Panduan Memilih Jasa Arsitek Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-panduan-arsitek-surabaya.webp" loading="lazy" alt="Panduan Memilih Jasa Arsitek Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -603,13 +604,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 8: Panduan Rumah Tropis[cite: 12] -->
+          <!-- Artikel Lama 8: Panduan Rumah Tropis -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Tips Arsitektur</span>
                 <a href="panduan-rumah-tropis-modern-surabaya.html">
-                  <img src="assets/img/blog-rumah-tropis-surabaya.webp" alt="Panduan Membangun Rumah Tropis Modern Surabaya" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-rumah-tropis-surabaya.webp" loading="lazy" alt="Panduan Membangun Rumah Tropis Modern Surabaya" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -629,13 +630,13 @@
             </article>
           </div>
 
-          <!-- Artikel Lama 9: Estimasi Biaya & RAB[cite: 12] -->
+          <!-- Artikel Lama 9: Estimasi Biaya & RAB -->
           <div class="col-lg-4 col-md-6">
             <article class="card h-100 border shadow-sm overflow-hidden rounded-4">
               <div class="position-relative overflow-hidden" style="height: 200px;">
                 <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 z-1" style="background-color: var(--accent-color); font-size: 0.75rem;">Perhitungan RAB</span>
                 <a href="cara-menghitung-estimasi-biaya-rab-arsitek.html">
-                  <img src="assets/img/blog-estimasi-rab-arsitek.webp" alt="Cara Menghitung Estimasi Biaya Jasa Arsitek dan RAB" class="w-100 h-100 object-fit-cover">
+                  <img src="assets/img/blog-estimasi-rab-arsitek.webp" loading="lazy" alt="Cara Menghitung Estimasi Biaya Jasa Arsitek dan RAB" class="w-100 h-100 object-fit-cover">
                 </a>
               </div>
               <div class="card-body p-4 bg-white d-flex flex-column justify-content-between">
@@ -662,12 +663,11 @@
 
   </main>
 
-  <!-- Footer Version Multi-Column -->
+  <!-- Footer Section -->
   <footer id="footer" class="footer-multi pt-5">
     <div class="container pb-4">
       <div class="row gy-4">
 
-        <!-- Kolom 1: Brand & Profil -->
         <div class="col-lg-5 col-md-6">
           <h3 class="footer-brand mb-3">arsiteksurabaya</h3>
           <p class="mb-2">Studio Perancangan Arsitektur, Desain Interior & Konsultan Konstruksi Profesional</p>
@@ -675,7 +675,6 @@
           <p class="fw-bold text-white mb-0">WhatsApp Studio: <span class="text-warning">+62 889-8964-3555</span></p>
         </div>
 
-        <!-- Kolom 2: Layanan Populer -->
         <div class="col-lg-4 col-md-6">
           <h4>Layanan Populer</h4>
           <ul>
@@ -687,7 +686,6 @@
           </ul>
         </div>
 
-        <!-- Kolom 3: Navigasi Website -->
         <div class="col-lg-3 col-md-6">
           <h4>Navigasi & Ekosistem</h4>
           <ul>
@@ -703,7 +701,6 @@
       </div>
     </div>
 
-    <!-- Sub-Footer Copyright -->
     <div class="footer-bottom py-3 text-center">
       <div class="container">
         <p class="mb-0">© Copyright <strong>arsiteksurabaya.web.id</strong>. All Rights Reserved</p>
@@ -711,10 +708,8 @@
     </div>
   </footer>
 
-  <!-- Scroll Top Arrow Button -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/6288989643555?text=Halo%20Arsitek%20Surabaya,%20saya%20ingin%20konsultasi%20artikel" class="whatsapp-float" target="_blank" title="Konsultasi via WhatsApp">
     <i class="bi bi-whatsapp"></i>
   </a>
@@ -722,22 +717,23 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 
-  <!-- Script Aktifkan Mobile Hamburger Menu -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
       function mobileNavToggle() {
         document.querySelector('body').classList.toggle('mobile-nav-active');
-        mobileNavToggleBtn.classList.toggle('bi-list');
-        mobileNavToggleBtn.classList.toggle('bi-x');
+        if (mobileNavToggleBtn) {
+          mobileNavToggleBtn.classList.toggle('bi-list');
+          mobileNavToggleBtn.classList.toggle('bi-x');
+        }
       }
 
       if (mobileNavToggleBtn) {

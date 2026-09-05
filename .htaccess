@@ -1,0 +1,47 @@
+# 1. ENGINES & HTTPS
+RewriteEngine On
+
+# Pengalihan otomatis HTTP ke HTTPS (Wajib untuk Keamanan & SEO)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. KOMPRESI GZIP / DEFLATE (Mempercepat FCP & LCP Mobile < 2 Detik)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json application/xml image/svg+xml
+  AddOutputFilterByType DEFLATE font/ttf font/otf font/woff font/woff2
+</IfModule>
+
+# 3. BROWSER CACHING (Simpan File di Cache HP Pengunjung)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+
+  # Aset Gambar & WebP
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # CSS, JavaScript, & Fonts
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# 4. OPTIMASI HEADERS & CACHE CONTROL (Menghilangkan Delay Rendering)
+<IfModule mod_headers.c>
+  Header unset ETag
+  FileETag None
+  <FilesMatch "\.(ico|jpe?g|png|gif|webp|css|js|woff2)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+</IfModule>

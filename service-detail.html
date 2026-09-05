@@ -7,9 +7,13 @@
   
   <title>Detail Layanan Arsitek | Arsitek Surabaya Studio</title>
   <meta name="description" content="Penjelasan mendalam mengenai cakupan layanan perancangan arsitektur, spesifikasi teknis, dan tahapan kerja profesional di Surabaya.">
+  <link rel="canonical" href="https://arsiteksurabaya.web.id/service-detail.html">
   
-  <!-- Favicons & Fonts -->
+  <!-- Favicons & Preloading -->
   <link href="assets/img/logo.png" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/img/service-arsitektur-rumah.webp" type="image/webp">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -57,7 +61,7 @@
     <div class="container">
       <div class="row gy-4">
         
-        <!-- Konten Utama Detail Layanan (Dinamis) -->
+        <!-- Konten Utama Detail Layanan -->
         <div class="col-lg-8">
           <div class="service-detail-box p-4 p-md-5 shadow-sm">
             
@@ -67,7 +71,7 @@
             <p class="lead text-muted mb-4 fs-6" id="service-lead">Perancangan tata ruang fungsional, fasad 3D photorealistic yang memukau, serta dokumen gambar kerja teknis (DED) lengkap untuk hunian pribadi beriklim tropis.</p>
 
             <figure class="mb-4">
-              <img src="assets/img/service-arsitektur-rumah.webp" id="service-img" class="img-fluid rounded-4 w-100 shadow-sm" style="height: 360px; object-fit: cover;" alt="Detail Layanan">
+              <img src="assets/img/service-arsitektur-rumah.webp" fetchpriority="high" id="service-img" class="img-fluid rounded-4 w-100 shadow-sm" style="height: 360px; object-fit: cover;" alt="Detail Layanan">
               <figcaption class="text-center text-muted small mt-2" id="service-caption">Visualisasi hasil akhir perancangan arsitektur rumah tinggal modern tropis.</figcaption>
             </figure>
 
@@ -127,7 +131,7 @@
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer id="footer" class="footer-multi pt-5">
     <div class="container pb-4">
       <div class="row gy-4">
@@ -163,11 +167,11 @@
     </div>
   </footer>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 
-  <!-- SCRIPT DINAMIS BERPINDAH LAYANAN -->
   <script>
     const servicesData = {
       1: {

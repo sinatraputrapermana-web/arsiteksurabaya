@@ -26,9 +26,12 @@
   <meta name="geo.position" content="-7.257472;112.752088">
   <meta name="ICBM" content="-7.257472, 112.752088">
 
-  <!-- Favicons & Fonts -->
+  <!-- Favicons & Preloading -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/img/about-studio-team.webp" type="image/webp">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -41,7 +44,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Structured Data JSON-LD (Organization & AboutPage) -->
+  <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,9 +76,9 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center text-decoration-none">
         <img src="assets/img/logo.png" alt="Logo Arsitek Surabaya" class="me-2">
-        <h1 class="sitename">ArsitekSurabaya</h1>
+        <h1 class="sitename m-0">ArsitekSurabaya</h1>
       </a>
 
       <!-- Navigasi Menu -->
@@ -91,7 +94,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="contact.html">Konsultasi Desain</a>
+      <a class="btn-getstarted text-decoration-none" href="contact.html">Konsultasi Desain</a>
 
     </div>
   </header>
@@ -103,7 +106,6 @@
       <div class="container" data-aos="fade-up">
         <h1 class="fw-bold text-white mb-2" style="font-size: 28px;">Tentang Kami</h1>
         
-        <!-- Navigasi Breadcrumb -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-center mb-0" style="font-size: 14px;">
             <li class="breadcrumb-item"><a href="index.html" style="color: #EFE6DD; text-decoration: none;">Beranda</a></li>
@@ -119,7 +121,7 @@
         <div class="row gy-4 align-items-center">
           
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about-studio-team.webp" class="img-fluid rounded shadow" alt="Tim Arsitek Surabaya Studio">
+            <img src="assets/img/about-studio-team.webp" fetchpriority="high" class="img-fluid rounded shadow" alt="Tim Arsitek Surabaya Studio">
           </div>
 
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
@@ -197,7 +199,7 @@
       </div>
     </section>
 
-    <!-- 3. Section Keunggulan / Mengapa Memilih Kami -->
+    <!-- 3. Section Keunggulan -->
     <section id="why-us" class="section py-5">
       <div class="container section-title text-center" data-aos="fade-up">
         <h2>Keunggulan</h2>
@@ -246,18 +248,17 @@
       <div class="container" data-aos="fade-up">
         <h3 class="fw-bold mb-3">Ingin Berdiskusi Seputar Proyek Bangunan Anda?</h3>
         <p class="mb-4 text-light">Konsultasikan ide awal, konsep tata ruang, dan estimasi biaya bersama tim Arsitek Surabaya.</p>
-        <a href="contact.html" class="btn px-4 py-3 fw-bold text-white shadow-sm" style="background-color: var(--accent-color); border-radius: 50px;">Mulai Konsultasi Desain <i class="bi bi-arrow-right ms-2"></i></a>
+        <a href="contact.html" class="btn px-4 py-3 fw-bold text-white shadow-sm text-decoration-none" style="background-color: var(--accent-color); border-radius: 50px;">Mulai Konsultasi Desain <i class="bi bi-arrow-right ms-2"></i></a>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer Version Multi-Column -->
+  <!-- Footer Section -->
   <footer id="footer" class="footer-multi pt-5">
     <div class="container pb-4">
       <div class="row gy-4">
 
-        <!-- Kolom 1: Brand & Profil -->
         <div class="col-lg-5 col-md-6">
           <h3 class="footer-brand mb-3">arsiteksurabaya</h3>
           <p class="mb-2">Studio Perancangan Arsitektur, Desain Interior & Konsultan Konstruksi Profesional</p>
@@ -265,7 +266,6 @@
           <p class="fw-bold text-white mb-0">WhatsApp Studio: <span class="text-warning">+62 889-8964-3555</span></p>
         </div>
 
-        <!-- Kolom 2: Layanan Populer -->
         <div class="col-lg-4 col-md-6">
           <h4>Layanan Populer</h4>
           <ul>
@@ -277,7 +277,6 @@
           </ul>
         </div>
 
-        <!-- Kolom 3: Navigasi Website -->
         <div class="col-lg-3 col-md-6">
           <h4>Navigasi & Ekosistem</h4>
           <ul>
@@ -293,7 +292,6 @@
       </div>
     </div>
 
-    <!-- Sub-Footer Copyright -->
     <div class="footer-bottom py-3 text-center">
       <div class="container">
         <p class="mb-0">© Copyright <strong>arsiteksurabaya.web.id</strong>. All Rights Reserved</p>
@@ -301,10 +299,8 @@
     </div>
   </footer>
 
-  <!-- Scroll Top Arrow Button -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/6288989643555?text=Halo%20Arsitek%20Surabaya,%20saya%20ingin%20konsultasi%20desain%20bangunan" class="whatsapp-float" target="_blank" title="Konsultasi via WhatsApp">
     <i class="bi bi-whatsapp"></i>
   </a>
@@ -312,22 +308,23 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 
-  <!-- Script Aktifkan Mobile Hamburger Menu -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
       function mobileNavToggle() {
         document.querySelector('body').classList.toggle('mobile-nav-active');
-        mobileNavToggleBtn.classList.toggle('bi-list');
-        mobileNavToggleBtn.classList.toggle('bi-x');
+        if(mobileNavToggleBtn) {
+          mobileNavToggleBtn.classList.toggle('bi-list');
+          mobileNavToggleBtn.classList.toggle('bi-x');
+        }
       }
 
       if (mobileNavToggleBtn) {

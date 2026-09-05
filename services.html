@@ -25,9 +25,12 @@
   <meta name="geo.position" content="-7.257472;112.752088">
   <meta name="ICBM" content="-7.257472, 112.752088">
 
-  <!-- Favicons & Fonts -->
+  <!-- Favicons & Preloading -->
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/logo.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/img/service-arsitektur-rumah.webp" type="image/webp">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -76,7 +79,6 @@
         <h1 class="sitename m-0">ArsitekSurabaya</h1>
       </a>
 
-      <!-- Navigasi Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Beranda</a></li>
@@ -120,10 +122,10 @@
 
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           
-          <!-- Layanan 1: Desain Arsitektur Rumah -->
+          <!-- Layanan 1 (LCP Image) -->
           <div class="col-lg-4 col-md-6">
             <div class="bg-white shadow-sm rounded-4 border h-100 d-flex flex-column overflow-hidden">
-              <img src="assets/img/service-arsitektur-rumah.webp" alt="Desain Arsitektur Rumah" class="service-card-img w-100">
+              <img src="assets/img/service-arsitektur-rumah.webp" fetchpriority="high" alt="Desain Arsitektur Rumah" class="service-card-img w-100">
               <div class="p-4 d-flex flex-column flex-grow-1 justify-content-between">
                 <div>
                   <h4 class="fw-bold fs-5 mb-2" style="color: var(--heading-color);">1. Desain Arsitektur Rumah</h4>
@@ -137,10 +139,10 @@
             </div>
           </div>
 
-          <!-- Layanan 2: Desain Bangunan Komersial -->
+          <!-- Layanan 2 -->
           <div class="col-lg-4 col-md-6">
             <div class="bg-white shadow-sm rounded-4 border h-100 d-flex flex-column overflow-hidden">
-              <img src="assets/img/service-komersial.webp" alt="Desain Bangunan Komersial" class="service-card-img w-100">
+              <img src="assets/img/service-komersial.webp" loading="lazy" alt="Desain Bangunan Komersial" class="service-card-img w-100">
               <div class="p-4 d-flex flex-column flex-grow-1 justify-content-between">
                 <div>
                   <h4 class="fw-bold fs-5 mb-2" style="color: var(--heading-color);">2. Desain Bangunan Komersial</h4>
@@ -154,10 +156,10 @@
             </div>
           </div>
 
-          <!-- Layanan 3: Penyusunan RAB & Gambar IMB -->
+          <!-- Layanan 3 -->
           <div class="col-lg-4 col-md-6">
             <div class="bg-white shadow-sm rounded-4 border h-100 d-flex flex-column overflow-hidden">
-              <img src="assets/img/service-rab-imb.webp" alt="Penyusunan RAB & Gambar IMB" class="service-card-img w-100">
+              <img src="assets/img/service-rab-imb.webp" loading="lazy" alt="Penyusunan RAB & Gambar IMB" class="service-card-img w-100">
               <div class="p-4 d-flex flex-column flex-grow-1 justify-content-between">
                 <div>
                   <h4 class="fw-bold fs-5 mb-2" style="color: var(--heading-color);">3. Penyusunan RAB & Gambar IMB</h4>
@@ -171,10 +173,10 @@
             </div>
           </div>
 
-          <!-- Layanan 4: Desain Interior & Lanskap -->
+          <!-- Layanan 4 -->
           <div class="col-lg-4 col-md-6">
             <div class="bg-white shadow-sm rounded-4 border h-100 d-flex flex-column overflow-hidden">
-              <img src="assets/img/service-interior.webp" alt="Desain Interior & Lanskap" class="service-card-img w-100">
+              <img src="assets/img/service-interior.webp" loading="lazy" alt="Desain Interior & Lanskap" class="service-card-img w-100">
               <div class="p-4 d-flex flex-column flex-grow-1 justify-content-between">
                 <div>
                   <h4 class="fw-bold fs-5 mb-2" style="color: var(--heading-color);">4. Desain Interior & Lanskap</h4>
@@ -188,10 +190,10 @@
             </div>
           </div>
 
-          <!-- Layanan 5: Visualisasi 3D Berkualitas Tinggi -->
+          <!-- Layanan 5 -->
           <div class="col-lg-4 col-md-6">
             <div class="bg-white shadow-sm rounded-4 border h-100 d-flex flex-column overflow-hidden">
-              <img src="assets/img/service-visualisasi-3d.webp" alt="Visualisasi 3D Berkualitas Tinggi" class="service-card-img w-100">
+              <img src="assets/img/service-visualisasi-3d.webp" loading="lazy" alt="Visualisasi 3D Berkualitas Tinggi" class="service-card-img w-100">
               <div class="p-4 d-flex flex-column flex-grow-1 justify-content-between">
                 <div>
                   <h4 class="fw-bold fs-5 mb-2" style="color: var(--heading-color);">5. Visualisasi 3D Berkualitas Tinggi</h4>
@@ -205,10 +207,10 @@
             </div>
           </div>
 
-          <!-- Layanan 6: Pengawasan Berkala Konstruksi -->
+          <!-- Layanan 6 -->
           <div class="col-lg-4 col-md-6">
             <div class="bg-white shadow-sm rounded-4 border h-100 d-flex flex-column overflow-hidden">
-              <img src="assets/img/service-pengawasan.webp" alt="Pengawasan Berkala Konstruksi" class="service-card-img w-100">
+              <img src="assets/img/service-pengawasan.webp" loading="lazy" alt="Pengawasan Berkala Konstruksi" class="service-card-img w-100">
               <div class="p-4 d-flex flex-column flex-grow-1 justify-content-between">
                 <div>
                   <h4 class="fw-bold fs-5 mb-2" style="color: var(--heading-color);">6. Pengawasan Berkala Konstruksi</h4>
@@ -238,7 +240,7 @@
 
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer id="footer" class="footer-multi pt-5">
     <div class="container pb-4">
       <div class="row gy-4">
@@ -278,8 +280,9 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <a href="https://wa.me/6288989643555?text=Halo%20Arsitek%20Surabaya,%20saya%20ingin%20konsultasi%20layanan%20jasa" class="whatsapp-float" target="_blank" title="Konsultasi via WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
