@@ -3,13 +3,13 @@
   <!-- Halaman Utama (Homepage) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://arsiteksurabaya.web.id/index</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -45,12 +45,32 @@
   <!-- Halaman Indeks Blog -->
   <url>
     <loc>https://arsiteksurabaya.web.id/blog</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 Artikel Baru Batch 6 (7 September 2026) -->
+  <!-- 3 Artikel Baru Batch 7 (8 September 2026) -->
+  <url>
+    <loc>https://arsiteksurabaya.web.id/arsitek-rumah-kontemporer-surabaya-selatan</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsiteksurabaya.web.id/restorasi-bangunan-cagar-budaya-surabaya-utara</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://arsiteksurabaya.web.id/desain-rumah-tumbuh-efisien-surabaya</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 3 Artikel Batch 6 (7 September 2026) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/jasa-arsitek-rumah-mewah-surabaya-barat</loc>
     <lastmod>2026-09-07</lastmod>
