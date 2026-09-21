@@ -3,13 +3,13 @@
   <!-- Halaman Utama (Homepage) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://arsiteksurabaya.web.id/index</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -45,12 +45,20 @@
   <!-- Halaman Indeks Blog -->
   <url>
     <loc>https://arsiteksurabaya.web.id/blog</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- Artikel Baru (19 September 2026) -->
+  <!-- Artikel Baru (21 September 2026) -->
+  <url>
+    <loc>https://arsiteksurabaya.web.id/jasa-arsitek-desain-rumah-tropis-kontemporer-pakuwon-indah-surabaya</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel (19 September 2026) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/jasa-arsitek-desain-rumah-minimalis-modern-bukit-darmo-golf-surabaya</loc>
     <lastmod>2026-09-19</lastmod>
