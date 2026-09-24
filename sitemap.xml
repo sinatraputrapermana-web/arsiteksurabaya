@@ -3,13 +3,13 @@
   <!-- Halaman Utama (Homepage) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://arsiteksurabaya.web.id/index</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -45,12 +45,20 @@
   <!-- Halaman Indeks Blog -->
   <url>
     <loc>https://arsiteksurabaya.web.id/blog</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- Artikel Baru (23 September 2026) -->
+  <!-- Artikel Baru (24 September 2026) -->
+  <url>
+    <loc>https://arsiteksurabaya.web.id/jasa-arsitek-desain-rumah-tropis-industrial-modern-surabaya</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Artikel (23 September 2026) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/jasa-arsitek-desain-rumah-mewah-modern-minimalis-surabaya</loc>
     <lastmod>2026-09-23</lastmod>
