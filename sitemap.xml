@@ -3,13 +3,13 @@
   <!-- Halaman Utama (Homepage) -->
   <url>
     <loc>https://arsiteksurabaya.web.id/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://arsiteksurabaya.web.id/index</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -45,9 +45,17 @@
   <!-- Halaman Indeks Blog -->
   <url>
     <loc>https://arsiteksurabaya.web.id/blog</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel Baru (5 Oktober 2026) -->
+  <url>
+    <loc>https://arsiteksurabaya.web.id/desain-paud-tk-surabaya-ruang-belajar-aman-ceria</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Artikel Baru (3 Oktober 2026) -->
